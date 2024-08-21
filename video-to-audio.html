@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video to Audio Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">VoidTools</a>
+          <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-button">Search</button>
+          </div>
+          <div class="nav-icons">
+            <a href="index.html" class="icon">Sort list Alphabetically</a>
+            <a href="video-to-audio.html" class="icon">Video to Audio</a>
+            <a href="privacy-policy.html" class="icon">Privacy Policy</a>
+            <!-- <a href="new/index.html" class="icon">Void Games</a> -->
+          </div>
+        </div>
+      </nav>
+      
+  <!-- Main Content -->
+  <main>
+    <h1>Video to Audio Converter</h1>
+
+    <!-- Form for video upload -->
+    <form id="uploadForm" enctype="multipart/form-data">
+      <label for="videoFile">Choose a video file:</label>
+      <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+      <br /><br />
+      <button type="button" onclick="convertVideo()">Convert to Audio</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
